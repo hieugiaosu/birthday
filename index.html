@@ -467,7 +467,7 @@ function meteorShower() {
       c: colors[Math.floor(Math.random() * colors.length)]
     };
   });
-  const start = performance.now(), DURATION = 5000;
+  const start = performance.now(), DURATION = 8000;
   (function frame(t) {
     const el = t - start;
     const fade = el > DURATION - 600 ? Math.max(0, (DURATION - el) / 600) : 1;  // tắt dần cuối cùng
